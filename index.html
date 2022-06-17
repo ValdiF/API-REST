@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+    
+    <nav id="header">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Página 1</a></li>
+            <li><a href="">Página 2</a></li>
+            <li><a href="">Página 3</a></li>
+        </ul>
+    </nav>
+
+   <main>
+    <h1><u>Conceptos</u></h1>
+
+
+    <h2><u><b>HTTP</b></u></h2>
+    <p>
+        HTTP son las siglas corresponientes a HyperText Transfer Protocol. Es un protocolo de 
+        comunicación en la Web.
+    </p>
+    <P>
+        Es un protocolo sin estado que utiliza TCP como protocolo de transporte y determina 
+        los tipos de peticiones que los clientes pueden enviar, así como el formato y estructura de las respuestas.
+    </P>
+    <p>
+        Los mensajes de petición están formados por una línea inicial de petición que incluye el método utilizado 
+        la parte relativa de la URL y la versión de HTTP; unas líneas de cabecera, una línea en blanco y, 
+        por último, el cuerpo del mensaje con los parámetros o fichero para enviar al servidor.
+    </p>
+    <img src="img/peticion.png" alt="mensaje de petición">
+    <p>
+        Los mensajes de respuesta están formados por una línea inicial de respuesta o de estado que incluye la versión de HTTP, 
+        un código de estado y un mensaje explicativo del código de estado; unas líneas de cabecera, una línea en blanco y, 
+        por último, el cuerpo del mensaje, determinado por el tipo de recursos solicitado.
+    </p>
+    <img src="img/respuesta.png" alt="mensaje de respuesta">
+
+    <h2><b><u>API REST</u></b></h2>
+    <p>
+        Una API (Application Programming Interface) es un conjunto de reglas que definen cómo pueden conectarse y comunicarse entre sí, diferentes 
+        aplicaciones o dispositivos. Una API REST es una API que cumple los principios de diseño del estilo de 
+        la arquitectura REST y sigue la estructura Cliente-Servidor.
+    </p>
+    <img src="img/api-rest.png" alt="API REST modelo CLiente-Servidor">
+
+    <h2><b><u>POSTMAN</u></b></h2>
+    <p>
+        Postman es una herramienta que nos permite realizar pruebas API. Es un cliente HTTP que nos da la 
+        posibilidad de testear 'HTTP requests' a través de una interfaz gráfica de usuario, por medio de 
+        la cual obtendremos diferentes tipos de respuesta que posteriormente deberán ser validados.
+    </p>
+    <img src="img/postman.png" alt="Testing API con Postman (GET)">
+
+    <h2><b><u>JSON</u></b></h2>
+    <p>
+        JSON (JavaScript Object Notation) es un formato ligero de texto plano y con estructura jerárquica que se utiliza para guardar 
+        e intercambiar información que cualquier persona pueda leer. Es una alternativa más simple y liviana al XML.
+    </p>
+    <img src="img/json.png" alt="ejemplo archivo JSON">
+    </main>
+
+    <table id="tabla"></table>
+
+</body>
+</html>
