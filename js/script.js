@@ -11,7 +11,7 @@ fetch(json,options)
     for(let idCoches in coches){
         allCoches.set(coches, coches[idCoches]) 
     }
-    cargarDatos();
-    mostrarTablaInicio();
+    //cargarDatos();
+    //mostrarTablaInicio();
   })
   .catch(err => console.error(err));
