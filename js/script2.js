@@ -13,7 +13,6 @@ fetch(json,options)
         allCoches.set(coches, coches[idCoches]) 
         //console.log(allCoches.get(coches).descripcion);
     }
-    cargarDatos();
-    //mostrarTablaInicio();
+
   })
   .catch(err => console.error(err));
