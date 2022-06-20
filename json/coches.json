@@ -6,7 +6,41 @@
             "marca": "Bmw",
             "descripcion": "Este un coche que se vende",
             "kilometraje": "1000 km",
+            "precio": "18.000€",
+            "img":"https://www.km77.com/images/medium/0/1/9/1/bmw-serie-1-2015-lateral-frontal-dinamico.320191.jpg"
+        },
+        {
+            "matricula":"2553-FFD",
+            "modelo": "Clase A",
+            "marca": "Mercedes",
+            "descripcion": "Este un coche que se vende",
+            "kilometraje": "2000 km",
+            "precio": "20.000€"
+        },
+        {
+            "matricula":"4353-FSD",
+            "modelo": "A3",
+            "marca": "Audi",
+            "descripcion": "Este un coche que se vende",
+            "kilometraje": "800 km",
+            "precio": "30.000€"
+        },
+        {
+            "matricula":"2353-GTD",
+            "modelo": "Serie 6",
+            "marca": "Bmw",
+            "descripcion": "Este un coche que se vende",
+            "kilometraje": "0 km",
             "precio": "120.000€"
+        },
+        {
+            "matricula":"2353-FZD",
+            "modelo": "A8",
+            "marca": "Audi",
+            "descripcion": "Este un coche que se vende",
+            "kilometraje": "0 km",
+            "precio": "180.000€"
         }
+
     ]
 }
