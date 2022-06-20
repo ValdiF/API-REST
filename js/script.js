@@ -2,16 +2,16 @@ let allCoches = new Map();
 const options = {
     method: "GET",
   };
-  let json = "json/coches.json";
+  let url = "json/coches.json";
 
-fetch(json,options)
+fetch(url,options)
   .then(res => res.json())
   .then(data => {
-      //console.log(data.coches);
+      //console.log(data);
     let coches = data.coches
     for(let idCoches in coches){
         allCoches.set(idCoches, coches[idCoches]) 
-        console.log(allCoches.get(idCoches).modelo);
+        //console.log(allCoches.get(idCoches).modelo);
     }
     cargarDatos();
     //mostrarTablaInicio();
@@ -74,9 +74,11 @@ function cargarTabla(){
         let comprobar = document.getElementById('cargar').selectedIndex;
         let comp = document.getElementById('cargar').value;
         let comprobarMatricula = allCoches.get(coches).matricula;
+        console.log(comp+"----");
+        console.log(comprobarMatricula);
         if(comprobar == 0){
             document.getElementById('tabla').innerHTML="";
-        }else if(comprobar == comprobarMatricula){
+        }else if(comp == comprobarMatricula){
             let row2 = document.createElement('tr');
             let bColumn = document.createElement('td');
             bColumn.innerHTML = "<img src="+allCoches.get(coches).img+" height='100' width='200'></img>";
