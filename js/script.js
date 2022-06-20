@@ -7,9 +7,8 @@ const options = {
 fetch(json,options)
   .then(res => res.json())
   .then(data => {
-    let coches = data.alumnos;
+    let coches = data//.aqui va lo que haya que extraer de datos;
     for(let idCoches in coches){
-      
         allCoches.set(coches, coches[idCoches]) 
     }
     cargarDatos();
