@@ -7,14 +7,11 @@ const options = {
 fetch(url,options)
   .then(res => res.json())
   .then(data => {
-      //console.log(data);
     let coches = data.coches
     for(let idCoches in coches){
         allCoches.set(idCoches, coches[idCoches]) 
-        //console.log(allCoches.get(idCoches).modelo);
     }
     cargarDatos();
-    //mostrarTablaInicio();
   })
   .catch(err => console.error(err));
 
@@ -45,7 +42,7 @@ function cargarTabla(){
     let tbody = document.createElement('tbody');
 
     let row1 = document.createElement('tr');
-    let hcolum = document.createElement('td');
+    let hcolum = document.createElement('th');
     let hcolum1 = document.createElement('th');
     let hcolum2 = document.createElement('th');
     let hcolum3 = document.createElement('th');
@@ -111,3 +108,5 @@ function cargarTabla(){
     document.getElementById('tabla').appendChild(thead);
     document.getElementById('tabla').appendChild(tbody);
 }
+
+
