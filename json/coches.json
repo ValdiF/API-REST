@@ -1,0 +1,12 @@
+{
+    "coches":[
+        {
+            "matricula":"2353-FZD",
+            "modelo": "Serie 1",
+            "marca": "Bmw",
+            "descripcion": "Este un coche que se vende",
+            "kilometraje": "1000 km",
+            "precio": "120.000€"
+        }
+    ]
+}
